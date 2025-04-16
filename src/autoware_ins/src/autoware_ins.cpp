@@ -27,9 +27,9 @@
 
 AutowareIns::AutowareIns() : Node("autoware_ins")
 {
-    this->declare_parameter("rmse_rotation_x", 0.0);
-    this->declare_parameter("rmse_rotation_y", 0.0);
-    this->declare_parameter("rmse_rotation_z", 0.0);
+    this->declare_parameter("rmse_rotation_x", 0.00872665); // 0.5  degree
+    this->declare_parameter("rmse_rotation_y", 0.00872665); // 0.5  degree
+    this->declare_parameter("rmse_rotation_z", 0.0174533);  // 1    degree
 
     rmse_rotation_x_ = this->get_parameter("rmse_rotation_x").as_double();
     rmse_rotation_y_ = this->get_parameter("rmse_rotation_y").as_double();

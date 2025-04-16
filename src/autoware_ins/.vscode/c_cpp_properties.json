@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/jazzy/include/**",
+        "/home/toffanetto/vilma_ws/src/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/autoware_ins/include/**",
+        "/home/toffanetto/vilma_ws/src/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/ntrip/include/**",
+        "/home/toffanetto/vilma_ws/src/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/xsens_mti_ros2_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
