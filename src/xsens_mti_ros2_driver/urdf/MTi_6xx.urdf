@@ -11,4 +11,25 @@
       </material>
     </visual>
   </link>
+
+
+  <link name="vlp16_front">
+    <visual>
+      <origin rpy="1.57079632679 0 1.57079632679" xyz="0 0 -0.0339"/>
+      <geometry>
+        <mesh filename="package://xsens_mti_ros2_driver/urdf/velodyne-vlp16.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="xsens_gray">
+        <color rgba="0.45 0.45 0.45 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+
+  <joint name="lidar_imu" type="fixed">
+    <parent link="imu_link" />
+    <child link="vlp16_front" />
+    <!-- Calibration -->
+    <origin xyz="0.005593697569844 0.002109367719277 -0.072895368036261 " rpy="0.0002889054550105368 0.007577368810653143 -0.07620471550025973" />
+  </joint>
 </robot>

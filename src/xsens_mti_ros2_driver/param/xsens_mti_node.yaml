@@ -45,7 +45,7 @@
         # 3) 2: Use UTCTime from the host device.
         # Note: Ensure "UTC Time" or "Sample Time Fine" is selected in MT Manager under Device Settings > Output Configurations, 
         # or you could also set 'enable_outputConfig: true' for once to configure output.
-        time_option: 0
+        time_option: 3
 
         # Logging Configuration
         # ---------------------
@@ -142,9 +142,8 @@
         pub_mag: true
         pub_temperature: true
         pub_pressure: true
-        pub_accelerationhr: false #High Rate Data Acceleration, when this is true, set enable_high_rate to true as well
         pub_angular_velocity_hr: false #High Rate Data Angular Velocity,  when this is true, set enable_high_rate to true as well
-        pub_transform: true
+        pub_transform: false # TODO Remove for Autoware
         pub_status: true
         pub_twist: true         # For GNSS/INS Version of MTI only
         pub_gnss: true          # For GNSS/INS Version of MTI only
@@ -152,7 +151,7 @@
         pub_velocity: true      # For GNSS/INS Version of MTI only
         pub_nmea: true          # For GNSS/INS Version of MTI only
         pub_gnsspose: true      # For GNSS/INS Version of MTI only
-        pub_odometry: false      # For GNSS/INS Version of MTI only
+        pub_odometry: true      # For GNSS/INS Version of MTI only
 
 
 
