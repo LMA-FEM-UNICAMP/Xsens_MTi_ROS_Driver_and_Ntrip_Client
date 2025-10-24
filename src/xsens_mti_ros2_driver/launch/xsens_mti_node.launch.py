@@ -21,6 +21,15 @@ def generate_launch_description():
             parameters=[parameters_file_path],
             arguments=[]
             )
+    autoware_ins = Node(
+            package='autoware_ins',
+            executable='autoware_ins_node',
+            name='autoware_ins',
+            output='screen'
+            )
+    
+    
     ld.add_action(xsens_mti_node)
+    ld.add_action(autoware_ins)
 
     return ld
