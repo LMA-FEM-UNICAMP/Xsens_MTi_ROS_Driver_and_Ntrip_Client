@@ -32,7 +32,7 @@
         # Specify the device ID when operating multiple devices to select a specific one.
         # Format: Uppercase hexadecimal string.
         # Example: device_id: '00800210C2'
-        #device_id: '00800210C2'
+        device_id: '00800210E5' # MTI-680G
 
         # Publisher Configuration
         publisher_queue_size: 5
@@ -137,6 +137,7 @@
         pub_free_acceleration: true
         pub_angular_velocity: true
         pub_acceleration: true
+        pub_accelerationhr: true
         pub_dq: false
         pub_dv: false
         pub_mag: true
